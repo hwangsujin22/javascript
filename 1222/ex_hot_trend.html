@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습예제_쿠팡 핫트랜드</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .banner{
+      width:325px; height:700px;
+      border:3px solid #000;
+      margin:0 auto;
+      text-align:center;
+      overflow:hidden;
+      position:relative;
+    }
+    .banner > h3{
+      text-indent:-50px;
+      font-size:22px;
+    }
+    .banner span{
+      color:#f00;
+    }
+    #left_btn, #right_btn{
+      position:absolute;
+      color:#fff;
+      font-size:40px;
+    }
+    #left_btn{left:0px; top:50%;}
+    #right_btn{right:0px;top:50%;}
+  </style>
+</head>
+<body>
+  <h2>실습예제_쿠팡 핫트랜드</h2>
+
+  <div class="banner">
+    <h3>HOT! TREND<br>
+      <span>추천 광고상품</span>
+    </h3>
+    <i class="fas fa-angle-left" id="left_btn"></i>
+    <i class="fas fa-angle-right" id="right_btn"></i>
+    <img src="./images/product01.png" alt="배너1" id="banner_img">
+  </div>
+
+  <script>
+    // 1. 랜덤 이미지
+    let img = ['product01.png', 'product02.jpg', 'product03.jpg', 'product04.jpg', 'product05.jpg', 'product06.jpg', 'product07.jpg', 'product08.png', 'product09.jpg', 'product10.png', 'product11.jpg', 'product12.jpg', 'product13.png', 'product14.jpg', 'product15.jpg', 'product16.jpg', 'product17.jpg', 'product18.jpg', ]
+    let ban_n = Math.floor(Math.random()*17);
+    let img_n = img[ban_n];
+
+    document.getElementById('banner_img').src="./images/"+img_n;
+
+    // 화살표 버튼 클릭시 이미지 이동
+    const l_btn = document.getElementById('left_btn');
+    const r_btn = document.getElementById('right_btn');
+
+    l_btn.addEventListener('click', function(){
+      // document.getElementById('banner_img').src="./images/"+
+
+    });
+
+  </script>
+  
+</body>
+</html>
