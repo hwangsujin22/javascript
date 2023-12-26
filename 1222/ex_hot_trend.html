@@ -25,6 +25,7 @@
       position:absolute;
       color:#fff;
       font-size:40px;
+      cursor:pointer;
     }
     #left_btn{left:0px; top:50%;}
     #right_btn{right:0px;top:50%;}
@@ -44,6 +45,7 @@
 
   <script>
     // 1. 랜덤 이미지
+    let n = 0;
     let img = ['product01.png', 'product02.jpg', 'product03.jpg', 'product04.jpg', 'product05.jpg', 'product06.jpg', 'product07.jpg', 'product08.png', 'product09.jpg', 'product10.png', 'product11.jpg', 'product12.jpg', 'product13.png', 'product14.jpg', 'product15.jpg', 'product16.jpg', 'product17.jpg', 'product18.jpg', ]
     let ban_n = Math.floor(Math.random()*17);
     let img_n = img[ban_n];
@@ -54,10 +56,11 @@
     const l_btn = document.getElementById('left_btn');
     const r_btn = document.getElementById('right_btn');
 
-    l_btn.addEventListener('click', function(){
-      // document.getElementById('banner_img').src="./images/"+
+    // r_btn.addEventListener('click', function(){
+    //   for(img[n<=17];n++)
+      
 
-    });
+    // });
 
   </script>
   
