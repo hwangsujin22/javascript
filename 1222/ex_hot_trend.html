@@ -56,11 +56,24 @@
     const l_btn = document.getElementById('left_btn');
     const r_btn = document.getElementById('right_btn');
 
-    // r_btn.addEventListener('click', function(){
-    //   for(img[n<=17];n++)
-      
-
-    // });
+    r_btn.addEventListener('click', function(){
+      if(n==17){
+        n=0;
+      }else{
+        n++;
+      }
+      document.getElementById('banner_img').src="./images/"+img[n];
+    
+    });
+    l_btn.addEventListener('click', function(){
+      if(n==0){
+        n=17;
+      }else{
+        n--;
+      }
+      document.getElementById('banner_img').src="./images/"+img[n];
+    
+    });
 
   </script>
   
