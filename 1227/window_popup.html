@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윈도우팝업</title>
+  <style>
+    *{margin:0px; padding:0px;}
+    .popup{
+      width:360px; height:400px; /* 325 */
+    }
+    .popup img{
+      display:block;
+    }
+    .popup input{
+      width:360px; height:75px;
+      border:none;
+      background:#333;
+      color:#fff;
+      font-size:18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <img src="./images/banner.jpg" alt="광고배너">
+    <input type="button" value="닫기" id="close_btn">
+  </div>
+
+  <script>
+    const l_btn = document.getElementById('close_btn');
+
+    l_btn.addEventListener('click', function(){
+      window.close();
+    })
+  </script>
+  
+</body>
+</html>
